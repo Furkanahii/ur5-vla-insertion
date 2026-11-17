@@ -1,0 +1,71 @@
+{
+  "train": {
+    "episodes": 8,
+    "action_outside_bounds_per_dimension": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      0,
+      0
+    ],
+    "transitions": 1200,
+    "proprio_outside_bounds_per_dimension": [
+      23,
+      21,
+      24,
+      24,
+      24,
+      0,
+      0,
+      0
+    ]
+  },
+  "validation": {
+    "episodes": 2,
+    "action_outside_bounds_per_dimension": [
+      0,
+      0,
+      7,
+      29,
+      0,
+      0,
+      0
+    ],
+    "transitions": 300,
+    "proprio_outside_bounds_per_dimension": [
+      0,
+      0,
+      7,
+      21,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "test": {
+    "episodes": 2,
+    "action_outside_bounds_per_dimension": [
+      56,
+      0,
+      9,
+      59,
+      0,
+      0,
+      0
+    ],
+    "transitions": 300,
+    "proprio_outside_bounds_per_dimension": [
+      250,
+      0,
+      7,
+      38,
+      6,
+      0,
+      0,
+      0
+    ]
+  }
+}

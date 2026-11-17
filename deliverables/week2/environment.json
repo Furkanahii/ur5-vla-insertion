@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-11-15T13:57:06.969848+00:00",
+  "passed": true,
+  "hostname": "login02.kuvalar.ku.edu.tr",
+  "python": "3.10.14",
+  "glibc": "glibc 2.28",
+  "pip_check": "No broken requirements found.",
+  "source_revisions": {
+    "openvla-oft": "e4287e94541f459edc4feabc4e181f537cd569a8",
+    "LIBERO": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+    "transformers": "bc339d9ad707454c0c115970db43c260067c61ab",
+    "dlimp": "040105d256bd28866cc6620621a3d5f7b6b91b46"
+  },
+  "packages": {
+    "torch": "2.2.0+cu121",
+    "torchvision": "0.17.0+cu121",
+    "transformers": "4.40.1",
+    "numpy": "1.26.4",
+    "tensorflow": "2.15.0",
+    "tensorflow-datasets": "4.9.3",
+    "mujoco": "2.3.7",
+    "robosuite": "1.4.1",
+    "huggingface-hub": "0.34.4"
+  },
+  "isaac_lab": "2.3.0",
+  "isaac_sim": "5.1.0",
+  "isaac_sif_bytes": 8341860352,
+  "isaac_sif_table": "------------------------------------------------------------------------------\nID   |GROUP   |LINK    |SIF POSITION (start-end)  |TYPE\n------------------------------------------------------------------------------\n1    |1       |NONE    |32176-32298               |Def.FILE\n2    |1       |NONE    |32298-36441               |JSON.Generic\n3    |1       |NONE    |36441-37310               |JSON.Generic\n4    |1       |NONE    |40960-8341860352          |FS (Squashfs/*System/amd64)",
+  "checkpoint_revision": "95220f9a3421a7ff12d4218e73d09ade830fa9a3",
+  "weight_shards": {
+    "model-00001-of-00004.safetensors": {
+      "bytes": 4925122448,
+      "indexed_tensors": 760
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4947392496,
+      "indexed_tensors": 109
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4947417456,
+      "indexed_tensors": 112
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 262668432,
+      "indexed_tensors": 1
+    }
+  },
+  "model_file_check": "Index, tensor headers, data lengths and required components; no new inference.",
+  "active_jobs": [],
+  "gpu_jobs_submitted": false
+}

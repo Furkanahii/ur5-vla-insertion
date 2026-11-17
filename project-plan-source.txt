@@ -1,0 +1,71 @@
+Simulation-Based Vision–Language–Action Learning for Rigid and Compliant Peg-in-Hole Insertion Using NVIDIA Isaac Lab
+Undergraduate research project brief  |  Two remote students  |  Proposed duration: 12 weeks
+1. Objective and research question
+Develop and evaluate a Vision–Language–Action (VLA) policy for robotic peg-in-hole insertion using NVIDIA Isaac Sim and Isaac Lab as the single simulation platform. Model the UR5 robot, a rigid peg and a rigid hole first; then investigate a rigid peg inserted into a deformable (soft) hole. Policies and simulation findings will subsequently be tested in physical insertion experiments with the laboratory UR5. No robot access is required during the initial remote phase.
+Research question: Can a pretrained VLA model, adapted using simulated demonstrations, robustly align and insert a rigid peg under variations in initial position, orientation, and eventually hole compliance? What additional benefit does haptic (e.g. contact-force) information provide?
+Scope clarification: Delivering a reproducible rigid-hole VLA training and evaluation pipeline is required. A physically plausible rigid–soft contact simulation is a separate feasibility milestone, not a guaranteed 12-week outcome. Human–robot dual-force learning and real haptic sensing are reserved for later research.
+2. Proposed software stack
+Component | Recommended choice | Rationale / notes
+Rigid insertion and robot simulation | NVIDIA Isaac Sim + Isaac Lab; UR5 model | Single simulation framework; configure UR5, gripper/tool, rigid peg and hole, virtual cameras and Cartesian controller.
+VLA model | OpenVLA-OFT | Pretrained VLA fine-tuned on simulated demonstrations; not an out-of-the-box insertion controller.
+ML and data | Python, PyTorch; shared episode schema | Log RGB, language instruction, robot state, Cartesian actions, ground truth for evaluation and contact metadata.
+Compliant insertion (phase 2) | Isaac Lab deformable-body workflows | Build a deformable solid with a hole, validate contact and numerical stability; force readout may need custom implementation.
+Collaboration | Git repository, issue tracker, pinned versions, remote GPU access | Shared scripts, weekly paired reviews and reproducible training/evaluation runs.
+
+3. Simulation task and training pipeline
+Task definition
+Use a simulated UR5 robot with a securely modeled peg tool/gripper and a fixed insertion fixture. Start with a rigid hole and a consistent virtual RGB camera; document camera intrinsics/extrinsics, UR5 TCP and world/base/hole frames. Use an end-effector Cartesian action interface and a constrained low-level controller.
+Randomize initial lateral offset and angular misalignment, then vary clearance, appearance, lighting and camera pose. Keep training and evaluation scenarios disjoint. Introduce hole stiffness/friction as additional parameters only after the soft-contact prototype is stable.
+Use a constant language instruction initially: “Insert the peg into the hole.” Add instruction variation only after a stable vision-to-action baseline is established.
+Demonstrations and model training
+Generate expert demonstrations with a scripted pose-aware controller in Isaac Lab (or a compatible demonstration workflow). The expert may use simulator ground truth, but the trained VLA must not see hidden peg/hole poses except for an explicitly labeled oracle ablation.
+Record synchronized RGB images, language command, UR5 joint/end-effector state, target Cartesian delta pose, peg–hole relative pose for evaluation, success/failure, and contact-state metadata. Record contact wrench only when a validated simulator readout is available.
+Build and test an adapter from the shared episode schema to OpenVLA-OFT. Document action normalization, UR5 reference frames, control frequency, gripper/tool assumptions and action-chunking. Check coordinate transforms by replay before training.
+Fine-tune the pretrained VLA and evaluate it in closed loop: prediction → low-level robot control → new observation. Teacher-forced prediction accuracy alone is not insertion success.
+4. Division of responsibilities
+Student A — simulation and data | Student B — VLA and evaluation
+Install Isaac Sim/Isaac Lab; import/configure and verify UR5 asset, tool and camera. | Run OpenVLA-OFT reference inference/training; document GPU and software requirements.
+Create UR5 rigid peg–rigid hole task and pose-based expert demonstrations. | Define observation/action interfaces and OpenVLA dataset adapter.
+Randomize initial poses and produce synchronized episode logs. | Fine-tune VLA; implement repeated closed-loop rollouts with UR5 controller.
+Implement success/contact checks; develop minimal rigid–soft contact feasibility test. | Compare to expert and non-VLA baselines; evaluate unseen starting poses.
+Validate deformable-hole motion and force-readout limitations; document numerical settings. | Prepare optional force-conditioned interface without claiming physical haptic validation.
+
+Both students should jointly review sample episodes every week and keep one shared repository. Interfaces must be agreed upon before generating a large dataset.
+5. Proposed 12-week schedule
+Weeks | Student A | Student B | Milestone
+1–2 | Install Isaac Sim/Lab; configure UR5, tool and virtual camera. | Run OpenVLA-OFT example; assess GPU capacity. | UR5 simulation and VLA example run separately.
+3–4 | Rigid peg–hole task, Cartesian expert and data logging; small soft-contact feasibility scene. | Define episode schema and OpenVLA adapter. | Replayable demonstrations; initial deformable-contact feasibility check.
+5–6 | Generate varied rigid-hole demonstrations and benchmark splits. | First fine-tuning; connect policy to UR5 simulation. | End-to-end closed-loop rigid insertion attempts.
+7–8 | Complete held-out offset/angle tests; build deformable-hole geometry if feasible. | Compare VLA against oracle expert and non-VLA baseline. | Quantitative rigid results; soft-hole numerical stability report.
+9–10 | Investigate soft-hole deformation, stiffness/clearance and force-access options. | Rigid-model failure analysis; optional mixed rigid/soft training. | Document what soft physics and forces can actually be trusted.
+11–12 | Optional stable soft-hole testbed; prepare matched UR5 fixture and camera specs. | Optional force-conditioned architecture; final evaluation and report. | Repository, videos, results and UR5 laboratory validation plan.
+
+Rigid–deformable feasibility gate (by week 4)
+Before attempting soft-hole VLA training, run a prescribed-displacement test with a rigid cylindrical peg and a deformable elastomer block containing a cylindrical opening. Confirm actual hole deformation, nonpenetrating contact behavior, repeatable force/displacement output where accessible, and numerical stability at several step sizes or mesh resolutions. If this gate fails, retain rigid-hole VLA as the core deliverable and document the blocker rather than delaying the complete project.
+6. Evaluation protocol and expected deliverables
+For rigid-hole tests, compare (i) ground-truth pose scripted expert, (ii) a simpler vision-based controller or behavioral cloning baseline, and (iii) OpenVLA-OFT. On the same held-out configurations, optionally compare rigid-trained VLA to policies adapted with deformable-hole demonstrations. Force-free versus force-conditioned policies are a later experiment, conditional on trustworthy contact-force signals.
+Primary metrics: insertion success rate over a fixed test set, completion time, final alignment error and jam/failure frequency.
+Contact-rich metrics (where the simulator supports valid readouts): peak contact force/torque, force impulse, jam/recovery events and success across clearance and stiffness. If rigid–deformable forces are not directly available, report this explicitly; do not substitute an unvalidated estimate as ground truth.
+Report results separately for seen versus unseen starting offsets/angles; where possible, repeat training with multiple seeds and show uncertainty.
+Deliverables: reproducible repository and setup instructions, simulation/demo dataset and metadata, model checkpoints or training recipe, evaluation scripts, quantitative plots/tables, demonstration videos, and a short technical report.
+7. Transition to physical validation on the UR5 robot
+After the simulation phase, the success of the developed VLA policies will be evaluated through physical peg-in-hole experiments using a UR5 robot in the laboratory. These experiments are a required validation step, not part of the students’ initial remote-only work.
+Build matching rigid peg/rigid hole fixtures first, followed by a rigid peg/compliant hole fixture with characterized geometry and stiffness.
+Transfer the same Cartesian action/TCP convention from simulated UR5 to laboratory UR5. Match UR5 variant, gripper/tool geometry, controller constraints, hole fixture and camera placement as closely as practical; verify calibration and action scaling.
+Calibrate the real camera and robot-to-camera transforms; check scale, action limits, time synchronization and end-effector pose tracking before learned-policy rollouts.
+Run conservative supervised trials with collision checks, low speed/force limits and a tested emergency stop. Verify contact behavior before enabling autonomous insertion.
+Compare physical and simulated success, time, alignment error, contact forces and jam behavior under matched initial offsets, angular errors and hole compliance. Quantify the simulation-to-reality (sim-to-real) gap.
+If transfer is inadequate, quantify the sim-to-real gap and consider camera/lighting randomization, system identification, compliant-contact calibration, controller tuning and limited supervised real-robot adaptation. Physical validation must not be inferred from simulation success alone.
+Hardware dependencies for the later UR5 phase: robot access; securely mounted insertion fixtures; calibrated camera; appropriate robot-side pose/control interface; and a compatible force/torque measurement method for haptic evaluation. The exact UR5 variant and sensing configuration will be confirmed before physical tests.
+8. Future haptic learning extension
+The broader research program includes simultaneous human–robot manipulation and two force measurements: human-applied force F_H and robot–object interaction force F_int. Under the proposal’s quasi-static assumptions and consistent sign convention, an estimate of environmental reaction force is F_env ≈ F_H − F_int, with dynamic, gravity and sensor-bias compensation when needed. These are later physical demonstration measurements, not data automatically available from a standard VLA.
+During simulation, log contact state and deformation; log reaction wrench only if the rigid–deformable force extraction method has been implemented and checked. Isaac Lab standard contact-sensor support for rigid–deformable interactions may be limited. Before learning from wrench histories, validate force–displacement behavior and, later, compare with physical UR5 force measurements.
+9. Success criteria and first assignment
+Required outcome by week 12: a reproducible Isaac Lab UR5 rigid-hole benchmark, a demonstration dataset, an OpenVLA-OFT model running in closed loop, and quantitative comparisons to baselines. A separate required feasibility report should document rigid peg–deformable hole stability and force-access issues. A stable soft-hole task and force-conditioned VLA are stretch goals; physical UR5 results follow in the laboratory phase.
+First assignment (weeks 1–2): Student A launches a UR5 asset in Isaac Lab, implements simple Cartesian motion and records a camera video plus pose/action log; Student B runs an official OpenVLA-OFT reference example and records software/GPU requirements. Jointly agree on a shared robot state/action and episode schema. By week 4, Student A must also show a separate minimal rigid peg–deformable hole simulation, without VLA, and document observed numerical stability.
+Technical starting points
+Isaac Sim documentation: https://docs.isaacsim.omniverse.nvidia.com/
+OpenVLA-OFT code: https://github.com/moojink/openvla-oft
+OpenVLA project: https://openvla.github.io/
+Isaac Lab documentation: https://isaac-sim.github.io/IsaacLab/ (deformable-body workflow and sensors to be checked against installed release)
+Original project concept: “Co-Located Haptic Learning for Contact-Rich Human–Robot Manipulation” (project proposal supplied separately).

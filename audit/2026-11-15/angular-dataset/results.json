@@ -1,0 +1,312 @@
+{
+  "manifest_sha256": "92c906c40261a90651ed609ff0da300456491e220afcc63bc225d771a6e77483",
+  "source_version_count": 1,
+  "camera_pose_count": 1,
+  "episode_count": 12,
+  "successful_episodes": 12,
+  "transition_count": 1800,
+  "verified_png_count": 1812,
+  "results": [
+    {
+      "run_id": "2027958_0",
+      "scenario_id": "case-c18fb8ed2403bbdf",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 2,
+        "offset_y_mm": 0,
+        "tilt_x_deg": 1,
+        "tilt_y_deg": 0
+      },
+      "measured_initial_axis_tilt_deg": 1.0009192349832916,
+      "axis_tilt_after_alignment_deg": 0.039562765252395944,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.01999964106082916,
+        "tip_lateral_error_m": 2.0051344898448236e-06,
+        "entry_lateral_error_m": 1.8114139735251032e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004002005134489845,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_1",
+      "scenario_id": "case-ef29330c47434889",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -2,
+        "offset_y_mm": 0,
+        "tilt_x_deg": -1,
+        "tilt_y_deg": 0
+      },
+      "measured_initial_axis_tilt_deg": 0.9993540662808158,
+      "axis_tilt_after_alignment_deg": 0.055951524927978134,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999700665473935,
+        "tip_lateral_error_m": 1.6649244169009326e-06,
+        "entry_lateral_error_m": 1.4848499527547372e-06,
+        "axis_tilt_deg": 0.03956415515478501,
+        "occupied_radius_m": 0.0040016658780660155,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_2",
+      "scenario_id": "case-e673aae371f6e2d8",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 0,
+        "offset_y_mm": 2,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": 1
+      },
+      "measured_initial_axis_tilt_deg": 1.0009192585309554,
+      "axis_tilt_after_alignment_deg": 0.03956264096882746,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999611258506772,
+        "tip_lateral_error_m": 1.7568160647689948e-06,
+        "entry_lateral_error_m": 1.5805275747640068e-06,
+        "axis_tilt_deg": 0.03956421282182362,
+        "occupied_radius_m": 0.0040017577697166636,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_3",
+      "scenario_id": "case-1ebd1960f47f31f6",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 0,
+        "offset_y_mm": -2,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": -1
+      },
+      "measured_initial_axis_tilt_deg": 1.0001369796389226,
+      "axis_tilt_after_alignment_deg": 0.05595163851791775,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999670863151547,
+        "tip_lateral_error_m": 1.8369627883006821e-06,
+        "entry_lateral_error_m": 1.6514075223586237e-06,
+        "axis_tilt_deg": 0.03956411042131825,
+        "occupied_radius_m": 0.004001837916435258,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_4",
+      "scenario_id": "case-f3354008803f16b9",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 1,
+        "offset_y_mm": 1,
+        "tilt_x_deg": 1,
+        "tilt_y_deg": -1
+      },
+      "measured_initial_axis_tilt_deg": 1.414411757425394,
+      "axis_tilt_after_alignment_deg": 0.06852639322610103,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999670863151547,
+        "tip_lateral_error_m": 1.8375477956215416e-06,
+        "entry_lateral_error_m": 1.6460339967458257e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004001837547795622,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_5",
+      "scenario_id": "case-7f4a0b0298f861db",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -1,
+        "offset_y_mm": 1,
+        "tilt_x_deg": -1,
+        "tilt_y_deg": 1
+      },
+      "measured_initial_axis_tilt_deg": 1.4144117530302263,
+      "axis_tilt_after_alignment_deg": 0.05595271267989656,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999611258506772,
+        "tip_lateral_error_m": 1.6783168652353836e-06,
+        "entry_lateral_error_m": 1.5066721851101485e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004001678316865235,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_6",
+      "scenario_id": "case-f4cddacb8a1d73fc",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 1,
+        "offset_y_mm": -1,
+        "tilt_x_deg": 2,
+        "tilt_y_deg": 0
+      },
+      "measured_initial_axis_tilt_deg": 1.9999016545673889,
+      "axis_tilt_after_alignment_deg": 0.07912622720090025,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999894380569455,
+        "tip_lateral_error_m": 1.9587770512688183e-06,
+        "entry_lateral_error_m": 1.7653175264307062e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004001958777051269,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_7",
+      "scenario_id": "case-237764e62f9d4f74",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -1,
+        "offset_y_mm": -1,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": -2
+      },
+      "measured_initial_axis_tilt_deg": 1.999901664605639,
+      "axis_tilt_after_alignment_deg": 0.07912863595730972,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999730467796323,
+        "tip_lateral_error_m": 1.9196613131123138e-06,
+        "entry_lateral_error_m": 1.7253859732220908e-06,
+        "axis_tilt_deg": 0.039564039829667656,
+        "occupied_radius_m": 0.004001920614956667,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_8",
+      "scenario_id": "case-b474e1f54b702840",
+      "split": "validation",
+      "parameters": {
+        "offset_x_mm": 1.5,
+        "offset_y_mm": -0.5,
+        "tilt_x_deg": 1.5,
+        "tilt_y_deg": 0.5
+      },
+      "measured_initial_axis_tilt_deg": 1.5806203229505578,
+      "axis_tilt_after_alignment_deg": 0.06852548236110173,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999700665473935,
+        "tip_lateral_error_m": 1.7942327399454817e-06,
+        "entry_lateral_error_m": 1.6116411566391556e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004001794232739946,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_9",
+      "scenario_id": "case-536ee02520f33b05",
+      "split": "validation",
+      "parameters": {
+        "offset_x_mm": -1.5,
+        "offset_y_mm": 0.5,
+        "tilt_x_deg": -1.5,
+        "tilt_y_deg": -0.5
+      },
+      "measured_initial_axis_tilt_deg": 1.5811154321073555,
+      "axis_tilt_after_alignment_deg": 0.06852566716887126,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999611258506772,
+        "tip_lateral_error_m": 1.744788553982503e-06,
+        "entry_lateral_error_m": 1.5636665147556244e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.004001744788553982,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_10",
+      "scenario_id": "case-aa5c73c1f6c5ec68",
+      "split": "test",
+      "parameters": {
+        "offset_x_mm": 2.5,
+        "offset_y_mm": 1,
+        "tilt_x_deg": 2.5,
+        "tilt_y_deg": -1
+      },
+      "measured_initial_axis_tilt_deg": 2.6922052138231622,
+      "axis_tilt_after_alignment_deg": 0.09690690958313494,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.01999952185153961,
+        "tip_lateral_error_m": 1.903946976115849e-06,
+        "entry_lateral_error_m": 1.7153963358805474e-06,
+        "axis_tilt_deg": 0.03956406614840165,
+        "occupied_radius_m": 0.0040019049006209395,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    },
+    {
+      "run_id": "2027958_11",
+      "scenario_id": "case-f232e28fdc233cf3",
+      "split": "test",
+      "parameters": {
+        "offset_x_mm": -2.5,
+        "offset_y_mm": -1,
+        "tilt_x_deg": -2.5,
+        "tilt_y_deg": 1
+      },
+      "measured_initial_axis_tilt_deg": 2.692205211766965,
+      "axis_tilt_after_alignment_deg": 0.09690689575777357,
+      "task_success": true,
+      "final_metrics": {
+        "depth_m": 0.019999775171279904,
+        "tip_lateral_error_m": 1.8754816065853437e-06,
+        "entry_lateral_error_m": 1.6929872132709597e-06,
+        "axis_tilt_deg": 0.0,
+        "occupied_radius_m": 0.0040018754816065856,
+        "within_bore": true,
+        "instant_success": true
+      },
+      "final_success_streak": 24,
+      "gravity_compensation_clipped_steps": 0
+    }
+  ],
+  "interpretation": "Scripted oracle expert and conversion pilot; no learned UR5 policy or generalization claim."
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "run_id": "2028002_0",
+    "scenario": "aligned",
+    "frame_count": 150,
+    "observation_count": 151,
+    "task_success": true,
+    "expected_task_success": true,
+    "longest_success_streak": 24,
+    "final_success_streak": 24,
+    "max_insertion_depth_m": 0.02002512204647064,
+    "final_metrics": {
+      "depth_m": 0.019999700665473935,
+      "tip_lateral_error_m": 1.3738191809196603e-06,
+      "entry_lateral_error_m": 1.2483143095908854e-06,
+      "axis_tilt_deg": 0.0,
+      "occupied_radius_m": 0.00400137381918092,
+      "within_bore": true,
+      "instant_success": true
+    },
+    "commanded_final_depth_m": 0.02,
+    "contact_control_steps": 0,
+    "peak_contact_normal_force_n_raw": 0.0,
+    "contact_wrench_validated": false,
+    "gravity_compensation_peak_nm": 27.99333953857422,
+    "gravity_compensation_clipped_steps": 0,
+    "validation_passed": true
+  },
+  {
+    "run_id": "2028002_1",
+    "scenario": "rim",
+    "frame_count": 150,
+    "observation_count": 151,
+    "task_success": false,
+    "expected_task_success": false,
+    "longest_success_streak": 0,
+    "final_success_streak": 0,
+    "max_insertion_depth_m": -1.63626670837691e-06,
+    "final_metrics": {
+      "depth_m": -0.00013556790351867964,
+      "tip_lateral_error_m": 0.009184386707373012,
+      "entry_lateral_error_m": 0.009184386707373012,
+      "axis_tilt_deg": 1.956106641493501,
+      "occupied_radius_m": 0.01318671898771883,
+      "within_bore": false,
+      "instant_success": false
+    },
+    "commanded_final_depth_m": 0.02,
+    "contact_control_steps": 64,
+    "peak_contact_normal_force_n_raw": 28.687171936035156,
+    "contact_wrench_validated": false,
+    "gravity_compensation_peak_nm": 28.291805267333984,
+    "gravity_compensation_clipped_steps": 0,
+    "validation_passed": true
+  },
+  {
+    "run_id": "2028002_2",
+    "scenario": "filled",
+    "frame_count": 150,
+    "observation_count": 151,
+    "task_success": false,
+    "expected_task_success": false,
+    "longest_success_streak": 0,
+    "final_success_streak": 0,
+    "max_insertion_depth_m": -6.229877471952694e-07,
+    "final_metrics": {
+      "depth_m": -0.00013604474067688277,
+      "tip_lateral_error_m": 0.0012157665591948405,
+      "entry_lateral_error_m": 0.0012157665591948405,
+      "axis_tilt_deg": 1.9770090440944657,
+      "occupied_radius_m": 0.005218148974899064,
+      "within_bore": false,
+      "instant_success": false
+    },
+    "commanded_final_depth_m": 0.02,
+    "contact_control_steps": 64,
+    "peak_contact_normal_force_n_raw": 28.935344696044922,
+    "contact_wrench_validated": false,
+    "gravity_compensation_peak_nm": 27.62266731262207,
+    "gravity_compensation_clipped_steps": 0,
+    "validation_passed": true
+  }
+]

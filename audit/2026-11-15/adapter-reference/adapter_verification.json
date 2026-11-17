@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "manifest_sha256": "92c906c40261a90651ed609ff0da300456491e220afcc63bc225d771a6e77483",
+  "split_episode_counts": {
+    "train": 8,
+    "validation": 2,
+    "test": 2
+  },
+  "tfds_observations_verified_pixel_for_pixel": 1812,
+  "native_actions_verified": 1800,
+  "chunks_verified_against_native_actions": {
+    "train": 1144,
+    "validation": 286
+  },
+  "chunk_tail_policy": "Discard final 7 start indices; no chunk crosses an episode; terminal placeholder excluded.",
+  "upstream_training_batch_shapes": {
+    "pixel_values": [
+      2,
+      6,
+      224,
+      224
+    ],
+    "proprio": [
+      2,
+      8
+    ],
+    "input_ids": [
+      2,
+      80
+    ],
+    "attention_mask": [
+      2,
+      80
+    ],
+    "labels": [
+      2,
+      80
+    ],
+    "actions": [
+      2,
+      8,
+      7
+    ]
+  },
+  "supervised_action_tokens_per_example": [
+    56,
+    56
+  ],
+  "statistics_unchanged_after_validation": true,
+  "profile": {
+    "task": "ur5_rigid_peg_insertion_v2",
+    "action_dim": 7,
+    "proprio_dim": 8,
+    "action_chunk_length": 8,
+    "normalization": "bounds_q99",
+    "num_images_in_input": 1,
+    "use_proprio": true,
+    "action_convention": "base-frame translation and left-multiplied rotation vector deltas; fixed tool command zero"
+  },
+  "model_weights_loaded": false,
+  "training_started": false
+}

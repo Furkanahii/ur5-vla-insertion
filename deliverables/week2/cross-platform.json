@@ -1,0 +1,12 @@
+{
+  "files": [
+    "ur5-pilot/runs/2025430/transitions.jsonl",
+    "ur5-pilot/runs/2025475/transitions.jsonl"
+  ],
+  "canonical_export": "VALAR",
+  "different_numeric_entries_before_sync": 34,
+  "max_absolute_numeric_difference": 4.440892098500626e-16,
+  "cause": "Mac/Linux quaternion-to-rotation-vector floating point roundoff in derived proprio fields",
+  "raw_steps_and_images_modified": false,
+  "previous_local_exports_preserved_at": ".audit/week2-pre-canonical"
+}

@@ -1,0 +1,6 @@
+Verified ten completed LIBERO episodes and ten rollout videos.
+PILOT_VERIFIED: 50 samples and PNGs; tracking accepted: /Users/LOCAL_USER/Downloads/project1 3/vla-hpc/ur5-pilot/runs/2025430
+PILOT_VERIFIED: 50 samples and PNGs; tracking accepted: /Users/LOCAL_USER/Downloads/project1 3/vla-hpc/ur5-pilot/runs/2025475
+INSERTION_VERIFIED: aligned, task_success=True, max_depth=0.020025 m
+INSERTION_VERIFIED: rim, task_success=False, max_depth=-0.000002 m
+INSERTION_VERIFIED: filled, task_success=False, max_depth=-0.000001 m

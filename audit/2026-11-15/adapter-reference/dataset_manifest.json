@@ -1,0 +1,172 @@
+{
+  "schema_version": "ur5_insertion_manifest_v1",
+  "purpose": "12-case conversion pilot, not a statistical benchmark",
+  "contract": {
+    "task_id": "ur5_rigid_peg_insertion_v2",
+    "spec": {
+      "peg_radius_m": 0.004,
+      "shaft_length_m": 0.06,
+      "adapter_radius_m": 0.012,
+      "adapter_length_m": 0.012,
+      "hole_radius_m": 0.00475,
+      "fixture_outer_radius_m": 0.03,
+      "hole_depth_m": 0.025,
+      "mesh_segments": 128,
+      "approach_gap_m": 0.025,
+      "insertion_depth_m": 0.02,
+      "success_depth_m": 0.018,
+      "radial_margin_m": 0.0001,
+      "success_hold_steps": 10,
+      "control_hz": 20,
+      "physics_hz": 120,
+      "tip_offset_m": 0.072,
+      "effective_hole_radius_m": 0.00474856938880697,
+      "radial_clearance_m": 0.0007485693888069703
+    },
+    "tcp_frame": "tip_z_up_v1",
+    "camera_position_world_m": [
+      0.82,
+      0.4,
+      0.43
+    ],
+    "camera_look_at_world_m": [
+      0.5498943328857422,
+      0.10921555012464523,
+      0.18607547569274901
+    ],
+    "camera_resolution": [
+      640,
+      480
+    ],
+    "camera_focal_length_mm": 30.0,
+    "expert": "align_position_and_orientation_30_insert_100_dwell_20",
+    "setup": "rotate_at_fixed_tip_30_hold_10",
+    "joint_stiffness": 800.0,
+    "joint_damping": 60.0,
+    "gravity_compensation": true,
+    "instruction": "Insert the peg into the hole.",
+    "tilt_convention": "base-frame rotation vector x/y in degrees; not Euler angles"
+  },
+  "cases": [
+    {
+      "id": "case-c18fb8ed2403bbdf",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 2,
+        "offset_y_mm": 0,
+        "tilt_x_deg": 1,
+        "tilt_y_deg": 0
+      }
+    },
+    {
+      "id": "case-ef29330c47434889",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -2,
+        "offset_y_mm": 0,
+        "tilt_x_deg": -1,
+        "tilt_y_deg": 0
+      }
+    },
+    {
+      "id": "case-e673aae371f6e2d8",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 0,
+        "offset_y_mm": 2,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": 1
+      }
+    },
+    {
+      "id": "case-1ebd1960f47f31f6",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 0,
+        "offset_y_mm": -2,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": -1
+      }
+    },
+    {
+      "id": "case-f3354008803f16b9",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 1,
+        "offset_y_mm": 1,
+        "tilt_x_deg": 1,
+        "tilt_y_deg": -1
+      }
+    },
+    {
+      "id": "case-7f4a0b0298f861db",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -1,
+        "offset_y_mm": 1,
+        "tilt_x_deg": -1,
+        "tilt_y_deg": 1
+      }
+    },
+    {
+      "id": "case-f4cddacb8a1d73fc",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": 1,
+        "offset_y_mm": -1,
+        "tilt_x_deg": 2,
+        "tilt_y_deg": 0
+      }
+    },
+    {
+      "id": "case-237764e62f9d4f74",
+      "split": "train",
+      "parameters": {
+        "offset_x_mm": -1,
+        "offset_y_mm": -1,
+        "tilt_x_deg": 0,
+        "tilt_y_deg": -2
+      }
+    },
+    {
+      "id": "case-b474e1f54b702840",
+      "split": "validation",
+      "parameters": {
+        "offset_x_mm": 1.5,
+        "offset_y_mm": -0.5,
+        "tilt_x_deg": 1.5,
+        "tilt_y_deg": 0.5
+      }
+    },
+    {
+      "id": "case-536ee02520f33b05",
+      "split": "validation",
+      "parameters": {
+        "offset_x_mm": -1.5,
+        "offset_y_mm": 0.5,
+        "tilt_x_deg": -1.5,
+        "tilt_y_deg": -0.5
+      }
+    },
+    {
+      "id": "case-aa5c73c1f6c5ec68",
+      "split": "test",
+      "parameters": {
+        "offset_x_mm": 2.5,
+        "offset_y_mm": 1,
+        "tilt_x_deg": 2.5,
+        "tilt_y_deg": -1
+      }
+    },
+    {
+      "id": "case-f232e28fdc233cf3",
+      "split": "test",
+      "parameters": {
+        "offset_x_mm": -2.5,
+        "offset_y_mm": -1,
+        "tilt_x_deg": -2.5,
+        "tilt_y_deg": 1
+      }
+    }
+  ]
+}

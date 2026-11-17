@@ -1,0 +1,10 @@
+a66a2aa3c2727a7541e26724f8910d860db79df97db38811b7324a7164b3b7d4  ./data-adapter/adapter_core.py
+334c033a0e811a7611e1dd3435c5eb9733f99156f435c9e3711e4a3a9bacad04  ./data-adapter/build_dataset.py
+6bf6f7505e3b138a58f079c321d6e638fda8cca89bc5c4c59008aa330a2763a1  ./data-adapter/smoke_adapter.py
+c89ef673a0bb1674a3006f10dffcf62aebcacdfaf38198967d79ab2653bfac10  ./data-adapter/test_adapter.py
+e25f8868d3bde7f0fbb150b17b6ce4cbf2dc07d6c07f625bbb0ec67d693acc63  ./data-adapter/ur5_loader.py
+b6023ff803356e18a8a3f76c83bc0437c3360ac1d1d47152f032f507f3cdec4a  ./data-adapter/ur5_tfds.py
+2508c09af0b35950b4db2b629dcb56ad2af42e0edeb6e99bf92fb4e50b52b5fc  ./rigid-insertion/check_insertion.py
+efa4a8b9ce2b03445fcce23765c5250b117a65ee7a2f5d948fcf69b9ca30f090  ./rigid-insertion/dataset_manifest.py
+e32b2dca97cc0c57e1dd0ed6345f8e258622bc2c3d1d9cb7bd130f49c3af349e  ./rigid-insertion/task_math.py
+dbf537cef4ce4f1682d74e37f9e6310f7a3e6b51cb73739c8a05bf7131f845da  ./ur5-pilot/episode.py

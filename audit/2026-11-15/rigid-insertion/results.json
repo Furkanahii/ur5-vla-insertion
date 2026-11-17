@@ -1,0 +1,138 @@
+{
+  "runs": [
+    {
+      "run": "2025864_0",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "aligned",
+      "fixture_offset_xy_mm": [
+        0.0,
+        0.0
+      ],
+      "task_success": true,
+      "validation_passed": true,
+      "final_depth_mm": 19.999670863151547,
+      "max_depth_mm": 20.02512204647064,
+      "final_lateral_error_mm": 0.0013712307298573661,
+      "final_axis_tilt_deg": 0.039564682049680854,
+      "contact_steps": 0,
+      "peak_normal_force_n_raw_unvalidated": 0.0,
+      "max_adjacent_proprio_rotation_jump_rad": 0.000160547055516746
+    },
+    {
+      "run": "2025864_1",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "rim",
+      "fixture_offset_xy_mm": [
+        0.0,
+        0.0
+      ],
+      "task_success": false,
+      "validation_passed": true,
+      "final_depth_mm": -0.13532948493957808,
+      "max_depth_mm": -0.0012637376785307186,
+      "final_lateral_error_mm": 9.151934601940338,
+      "final_axis_tilt_deg": 1.9525884715847213,
+      "contact_steps": 64,
+      "peak_normal_force_n_raw_unvalidated": 28.356088638305664,
+      "max_adjacent_proprio_rotation_jump_rad": 0.0011596382846732983
+    },
+    {
+      "run": "2025864_2",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "filled",
+      "fixture_offset_xy_mm": [
+        0.0,
+        0.0
+      ],
+      "task_success": false,
+      "validation_passed": true,
+      "final_depth_mm": -0.13506126403808882,
+      "max_depth_mm": -0.0004590749740629452,
+      "final_lateral_error_mm": 1.2685523065297568,
+      "final_axis_tilt_deg": 1.9814875146210353,
+      "contact_steps": 64,
+      "peak_normal_force_n_raw_unvalidated": 29.11946678161621,
+      "max_adjacent_proprio_rotation_jump_rad": 0.0013143690737248926
+    },
+    {
+      "run": "2025865_0",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "aligned",
+      "fixture_offset_xy_mm": [
+        3.0,
+        0.0
+      ],
+      "task_success": true,
+      "validation_passed": true,
+      "final_depth_mm": 19.99976027011871,
+      "max_depth_mm": 20.02598631381988,
+      "final_lateral_error_mm": 0.0014096094028915136,
+      "final_axis_tilt_deg": 0.0,
+      "contact_steps": 0,
+      "peak_normal_force_n_raw_unvalidated": 0.0,
+      "max_adjacent_proprio_rotation_jump_rad": 0.00016061268712096608
+    },
+    {
+      "run": "2025865_1",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "aligned",
+      "fixture_offset_xy_mm": [
+        -3.0,
+        0.0
+      ],
+      "task_success": true,
+      "validation_passed": true,
+      "final_depth_mm": 19.99944734573364,
+      "max_depth_mm": 20.024108767509457,
+      "final_lateral_error_mm": 0.0010944986038729024,
+      "final_axis_tilt_deg": 0.0,
+      "contact_steps": 0,
+      "peak_normal_force_n_raw_unvalidated": 0.0,
+      "max_adjacent_proprio_rotation_jump_rad": 0.00017424824837710673
+    },
+    {
+      "run": "2025865_2",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "aligned",
+      "fixture_offset_xy_mm": [
+        0.0,
+        3.0
+      ],
+      "task_success": true,
+      "validation_passed": true,
+      "final_depth_mm": 19.99971556663513,
+      "max_depth_mm": 20.025390267372128,
+      "final_lateral_error_mm": 0.001824077944643845,
+      "final_axis_tilt_deg": 0.0,
+      "contact_steps": 0,
+      "peak_normal_force_n_raw_unvalidated": 0.0,
+      "max_adjacent_proprio_rotation_jump_rad": 0.00015989183833597825
+    },
+    {
+      "run": "2025865_3",
+      "task_id": "ur5_rigid_peg_insertion_v1",
+      "scenario": "aligned",
+      "fixture_offset_xy_mm": [
+        0.0,
+        -3.0
+      ],
+      "task_success": true,
+      "validation_passed": true,
+      "final_depth_mm": 19.999670863151547,
+      "max_depth_mm": 20.024749517440792,
+      "final_lateral_error_mm": 0.0016889000330229293,
+      "final_axis_tilt_deg": 0.039563952048226325,
+      "contact_steps": 0,
+      "peak_normal_force_n_raw_unvalidated": 0.0,
+      "max_adjacent_proprio_rotation_jump_rad": 0.00015991243282314666
+    }
+  ],
+  "verified_png_count": 1057,
+  "transition_count": 1050,
+  "source_version_count": 1,
+  "physics_controls_passed": 3,
+  "offset_demonstrations_succeeded": 4,
+  "learned_policy_used": false,
+  "contact_wrench_validated": false,
+  "scope": "One geometry/camera, four fixed lateral offsets, zero initial angular offsets. Not a statistical VLA benchmark."
+}

@@ -1,0 +1,8 @@
+numpy==1.26.4
+opencv-python==4.10.0.84
+mujoco==2.3.7
+huggingface-hub==0.34.4
+accelerate==0.30.1
+tensorflow-metadata==1.15.0
+bddl==1.0.1
+gym==0.26.2

@@ -1,0 +1,20 @@
+{
+  "dataset_name": "ur5_insertion_pilot",
+  "version": "1.0.0",
+  "split_episode_counts": {
+    "train": 8,
+    "val": 2,
+    "test": 2
+  },
+  "manifest_sha256": "92c906c40261a90651ed609ff0da300456491e220afcc63bc225d771a6e77483",
+  "normalization_fitted_episodes": 8,
+  "normalization_fitted_transitions": 1200,
+  "train_statistics_sha256": "90a1765caa3cda1fda42571672a57ad231b627972d8278328f504b21b96fc6b5",
+  "terminal_observation_included": true,
+  "model_feature_keys": [
+    "observation/image",
+    "observation/proprio",
+    "language_instruction",
+    "action"
+  ]
+}

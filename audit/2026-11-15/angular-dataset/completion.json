@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-11-15T13:36:40.339189+00:00",
+  "stage": "angular-demonstration-and-data-adapter-pilot",
+  "completed": true,
+  "successful_expert_episodes": 12,
+  "native_transitions": 1800,
+  "dataset_png_verified": 1812,
+  "control_png_verified": 453,
+  "local_cpu_tests_passed": 28,
+  "frozen_dataset_source_versions": 1,
+  "fixed_camera_pose_count": 1,
+  "adapter_job": "2028146",
+  "adapter_passed": true,
+  "train_chunks_verified": 1144,
+  "validation_chunks_verified": 286,
+  "tfds_backup_files_checksum_verified": 5,
+  "adapter_source_matches_frozen_job": true,
+  "learned_ur5_policy_exists": false,
+  "next_work": [
+    "separate deformable-contact feasibility",
+    "broader training demonstrations with a new frozen manifest",
+    "UR5 training entry and closed-loop policy"
+  ],
+  "pilot_limitation": "Test positions/angles exceed training support; test TCP X clips in 250/300 observations. Statistics were not refit."
+}

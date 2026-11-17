@@ -1,0 +1,18 @@
+{
+  "source_commit": "e93027a478e4c15d4cc030c79dc013e763410fa0",
+  "prepared_date": "2026-11-17",
+  "redacted_documentation": [
+    "AUDIT-2026-11-15.md",
+    "audit/2026-11-15/ur5-first-record-analysis.json",
+    "data-adapter/README.md",
+    "deliverables/week2/README.md",
+    "deliverables/week2/packages-recorded.txt",
+    "deliverables/week2/source-repository.json",
+    "deliverables/week2/verification-valar.log",
+    "deliverables/week2/verification.log",
+    "rigid-insertion/README.md"
+  ],
+  "source_code_files_unchanged": 40,
+  "private_notes_included": false,
+  "large_runtime_included": false
+}

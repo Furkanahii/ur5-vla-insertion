@@ -1,0 +1,38 @@
+[
+  {
+    "source": "/Users/LOCAL_USER/Downloads/project1 3/vla-hpc/ur5-pilot/runs/2000810/steps.jsonl",
+    "initial_reference": "summary",
+    "config": null,
+    "metrics": {
+      "sample_count": 50,
+      "max_abs_tracking_error_xyz_m": [
+        0.0013115243911743235,
+        0.00045467913150787354,
+        0.0306997150182724
+      ],
+      "rms_tracking_error_xyz_m": [
+        0.0009083490118660953,
+        0.00013833230810599727,
+        0.02919092245583498
+      ],
+      "max_position_error_m": 0.030700098321256534,
+      "final_tracking_error_xyz_m": [
+        3.2277107238742886e-05,
+        -7.536262273788452e-05,
+        -0.03061823546886444
+      ],
+      "final_displacement_xyz_m": [
+        0.03003227710723877,
+        -7.536262273788452e-05,
+        -0.03061823546886444
+      ],
+      "z_displacement_range_m": [
+        -0.0306997150182724,
+        -0.008175790309906006
+      ],
+      "max_orientation_error_deg": 3.3881728454282496,
+      "final_orientation_error_deg": 3.377946005806503
+    },
+    "limitation": "Metrics cover recorded control samples, not unrecorded physics substeps. Gravity cannot be inferred from old logs without configuration."
+  }
+]

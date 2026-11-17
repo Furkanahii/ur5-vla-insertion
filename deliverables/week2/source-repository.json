@@ -1,0 +1,10 @@
+{
+  "remote_name": "valar",
+  "remote_url": "HPC_USER@login.valar.ku.edu.tr:/scratch/HPC_USER/vla-hpc/shared-source.git",
+  "branch": "codex/week2-handoff",
+  "tag": "week2-2026-11-15",
+  "upload_pack": "/scratch/HPC_USER/vla-hpc/git-tools/upload-pack.sh",
+  "receive_pack": "/scratch/HPC_USER/vla-hpc/git-tools/receive-pack.sh",
+  "access": "Private SSH access through the authorized VALAR account; not published to GitHub.",
+  "large_assets": "Runtime, model weights, native runs and TFDS remain in the working area and Mac backup."
+}

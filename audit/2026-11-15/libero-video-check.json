@@ -1,0 +1,72 @@
+[
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=1--success=True--task=put_both_the_alphabet_soup_and_the_tomato_sauce_in.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "380"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=10--success=True--task=put_the_yellow_and_white_mug_in_the_microwave_and_.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "249"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=2--success=True--task=put_both_the_cream_cheese_box_and_the_butter_in_th.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "243"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=3--success=True--task=turn_on_the_stove_and_put_the_moka_pot_on_it.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "242"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=4--success=True--task=put_the_black_bowl_in_the_bottom_drawer_of_the_cab.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "254"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=5--success=True--task=put_the_white_mug_on_the_left_plate_and_put_the_ye.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "220"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=6--success=True--task=pick_up_the_book_and_place_it_in_the_back_compartm.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "170"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=7--success=True--task=put_the_white_mug_on_the_plate_and_put_the_chocola.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "286"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=8--success=True--task=put_both_the_alphabet_soup_and_the_cream_cheese_bo.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "248"
+  },
+  {
+    "file": "2026_11_07-21_21_48--openvla_oft--episode=9--success=True--task=put_both_moka_pots_on_the_stove.mp4",
+    "codec_name": "h264",
+    "width": 256,
+    "height": 256,
+    "nb_frames": "367"
+  }
+]

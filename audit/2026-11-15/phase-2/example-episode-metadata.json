@@ -1,0 +1,114 @@
+{
+  "schema_version": "ur5_episode_v1",
+  "task_id": "ur5_cartesian_motion_pilot",
+  "exporter_sha256": "dbf537cef4ce4f1682d74e37f9e6310f7a3e6b51cb73739c8a05bf7131f845da",
+  "language_instruction": "Move the robot wrist along the base X axis.",
+  "control_hz": 20,
+  "transition_count": 50,
+  "observation_count": 51,
+  "action_names": [
+    "dx_m",
+    "dy_m",
+    "dz_m",
+    "drot_x_rad",
+    "drot_y_rad",
+    "drot_z_rad",
+    "fixed_tool_command"
+  ],
+  "action_normalized": false,
+  "rotation_convention": "base-frame rotvec, q_target = q_delta * q_observed, wxyz quaternions",
+  "proprio_names": [
+    "tcp_x_m",
+    "tcp_y_m",
+    "tcp_z_m",
+    "tcp_rx_rad",
+    "tcp_ry_rad",
+    "tcp_rz_rad",
+    "fixed_gripper_0",
+    "fixed_gripper_1"
+  ],
+  "joint_names": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint"
+  ],
+  "native_action_chunk_length": 1,
+  "split": "interface_validation_only",
+  "base_pose_world_m_wxyz": [
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "tool": {
+    "kind": "wrist_link_pilot",
+    "controlled_link": "wrist_3_link",
+    "tcp_offset_m_wxyz": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "actuated_gripper": false
+  },
+  "camera": {
+    "camera_intrinsics": [
+      [
+        305.4163818359375,
+        0.0,
+        160.0
+      ],
+      [
+        0.0,
+        305.4163818359375,
+        120.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "camera_position_world_m": [
+      1.25,
+      1.0499999523162842,
+      0.949999988079071
+    ],
+    "camera_orientation_ros_wxyz": [
+      -0.24453426897525787,
+      0.34439364075660706,
+      0.7390639185905457,
+      -0.5247671008110046
+    ]
+  },
+  "robot_gravity_disabled": false,
+  "gravity_compensation": true,
+  "quality": {
+    "tracking_passed": true,
+    "within_5mm_0p05rad_action_bounds": true
+  },
+  "eligible_for_insertion_training": false,
+  "exclusion_reason": "Motion/interface pilot; no peg, hole or insertion success label.",
+  "normalization": {
+    "fit_on": "training insertion episodes only",
+    "action_normalization_mask": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ],
+    "statistics_fitted": false
+  }
+}

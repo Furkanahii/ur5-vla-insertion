@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-11-15T13:57:10.972627+00:00",
+  "technical_week2_passed": true,
+  "source_plan_sha256": "71cf65cbed7600d4f35a243e4d1131cc1d1acecf333b3a9cad9a34c52a241967",
+  "reference_vla": {
+    "run": "1952021",
+    "episodes": 10,
+    "successes": 10,
+    "versions": {
+      "openvla-oft": "e4287e94541f459edc4feabc4e181f537cd569a8",
+      "libero": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+      "checkpoint": "95220f9a3421a7ff12d4218e73d09ade830fa9a3"
+    }
+  },
+  "ur5_motion": {
+    "record_run": "2025430",
+    "delta_replay_run": "2025475",
+    "actions_per_episode": 50,
+    "observations_per_episode": 51,
+    "verified_png_count": 102,
+    "max_sampled_z_error_m": 0.00017949938774108887,
+    "replay_max_position_difference_m": 6.854534149169922e-07
+  },
+  "decoded_mp4_count": 11,
+  "tool_and_camera_physics_controls_passed": 3,
+  "completed_extra_adapter_passed": true,
+  "dataset_backup_checksums_match": true,
+  "new_gpu_jobs_started": false,
+  "human_joint_schema_review": "not attested; students review together",
+  "evidence_sha256": {
+    "deliverables/week2/project-plan.docx": "71cf65cbed7600d4f35a243e4d1131cc1d1acecf333b3a9cad9a34c52a241967",
+    "runs/1952021/checkpoint.commit": "11a16679bab8f83682788a4a032b282dbee60eec6ffd64c2a4e1e1133493ef6c",
+    "runs/1952021/libero.commit": "d2b7a675623182da9015dd7599febb166abdd248290cb5823302c1fae14b138b",
+    "runs/1952021/openvla-oft.commit": "4fd21982f59987ad44a0a9859b22bfbbe33e3b323df0c18dc5473cc805bcc90a",
+    "runs/1952021/packages.txt": "08c0d31253424b52ccc52a647594a7f85205296380926af8ffd55de8506f91bd",
+    "runs/1952021/gpu.csv": "c23ea7859fc5baee20db1496402cc38055cf1b4f3cd63a18aea01ebbd8998041",
+    "runs/1952021/eval-logs/EVAL-libero_10-openvla-2026_11_07-21_21_48.txt": "b6d36781ee20e957ab03d56b23b4a24a860236f42f37a6725812d51031a5854a",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=1--success=True--task=put_both_the_alphabet_soup_and_the_tomato_sauce_in.mp4": "9df7ec243e0ff2abca5954f5c507ad6705dc0da420eb7008e865fecf4514fec9",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=10--success=True--task=put_the_yellow_and_white_mug_in_the_microwave_and_.mp4": "f5811adfd7ed95de2841b135e7e4a7c86e40187cc4bf6eb19636bf94aea18d5b",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=2--success=True--task=put_both_the_cream_cheese_box_and_the_butter_in_th.mp4": "690a633282fdca8054e0a9de85e7f6db1874f3e39330f1d92af898d132f09cd3",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=3--success=True--task=turn_on_the_stove_and_put_the_moka_pot_on_it.mp4": "416a40ca145c43f0ca2a855892bb5c764c67f440e2373d52e4db9f9fefdea339",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=4--success=True--task=put_the_black_bowl_in_the_bottom_drawer_of_the_cab.mp4": "f37218985dd34db07ff8f8399f274ff9596e4fe1166251a6fe569a9cb39324aa",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=5--success=True--task=put_the_white_mug_on_the_left_plate_and_put_the_ye.mp4": "aea524e56c01f7c806427b8b456ee5d5d848fc3343e703fa92b9e7a587cafc45",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=6--success=True--task=pick_up_the_book_and_place_it_in_the_back_compartm.mp4": "4d78e8cb6a12af6009ef3ce1f7885d8a83ca570feb67546fc026b005b7a7df0e",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=7--success=True--task=put_the_white_mug_on_the_plate_and_put_the_chocola.mp4": "1e19d248c275dc0ff6aab522b4d62c79a1c1d7b563a81257c63b6e1e73ee61c6",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=8--success=True--task=put_both_the_alphabet_soup_and_the_cream_cheese_bo.mp4": "05759573b48b853654d33542ef8b6285699fb9d71910e66c16027d052286d440",
+    "runs/1952021/rollouts/2026_11_07/2026_11_07-21_21_48--openvla_oft--episode=9--success=True--task=put_both_moka_pots_on_the_stove.mp4": "50cf0b5d9951ad92c44327db0411c8a1ad9fa4b04697517c87bcede55dcde1d5",
+    "deliverables/week2/ur5-motion.mp4": "d0517505079940931b5270636a42732b7b43c6d0c86953715b14ad8332baca49",
+    "ur5-pilot/runs/2025430/config.json": "8cdec684a06a47a84397faf602401c9c42c724acd20f1bfc06945953cf4e61b6",
+    "ur5-pilot/runs/2025430/summary.json": "be58bca897fc13567f88b6f92ce9d6bb28d4abc402da16731cecf8c01e042d98",
+    "ur5-pilot/runs/2025430/steps.jsonl": "b2d8d39241426b289fec9c05c4c7b5e4916f778fdecf1f0e58b49a8b4e4dc5e3",
+    "ur5-pilot/runs/2025430/episode.json": "af8232592b62724cc3e422b6c19e1d819371b50dd89cc934a95e2d8740ee3922",
+    "ur5-pilot/runs/2025430/transitions.jsonl": "910deeebf361e64e0b467ea0d195b59cd9b0c0f60c7f423139bf71ecd1ac2872",
+    "ur5-pilot/runs/2025430/source.sha256": "0184ebb5079f726b60dfd3e614bf4ee1ec22de125756f09da6a89077b22baec6",
+    "ur5-pilot/runs/2025475/config.json": "69207fe568e8a9c19143ca011a1da0774f0ade569710c8571f3f8cbb1b69b674",
+    "ur5-pilot/runs/2025475/summary.json": "564020f57d8c8febc21b75baf744e85569c61bb65f0adf3ce663d3b646b04dbc",
+    "ur5-pilot/runs/2025475/steps.jsonl": "a4ffcde5175e2ed5f8c2b54ceaa4428f42442adbc06bf9901b05e52952a789d9",
+    "ur5-pilot/runs/2025475/episode.json": "af8232592b62724cc3e422b6c19e1d819371b50dd89cc934a95e2d8740ee3922",
+    "ur5-pilot/runs/2025475/transitions.jsonl": "19dd97519a719186315623c358e17855b5a35a1e7001b65831ed4ce227aee89e",
+    "ur5-pilot/runs/2025475/source.sha256": "0184ebb5079f726b60dfd3e614bf4ee1ec22de125756f09da6a89077b22baec6"
+  }
+}
